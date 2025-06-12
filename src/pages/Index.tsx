@@ -1,6 +1,5 @@
-
 import { useEffect, useState } from 'react';
-import { Github, Linkedin, Mail, Phone, MapPin, Calendar, ExternalLink, Code, Database, Cloud, Settings } from 'lucide-react';
+import { Github, Linkedin, Mail, Phone, MapPin, Calendar, ExternalLink, Code, Database, Cloud, Settings, Award, GraduationCap, Target } from 'lucide-react';
 
 const Index = () => {
   const [isLoaded, setIsLoaded] = useState(false);
@@ -126,8 +125,46 @@ const Index = () => {
         </div>
       </section>
 
-      {/* Skills Section */}
+      {/* Objective Section */}
       <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent flex items-center justify-center gap-3">
+            <Target className="text-green-400" size={36} />
+            Objective
+          </h2>
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-green-500/50 transition-all duration-500">
+            <ul className="space-y-4 text-slate-300 leading-relaxed">
+              <li className="flex items-start gap-3">
+                <span className="text-green-400 mt-2 block w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></span>
+                7 years experienced full stack developer with Solution Architect Certification.
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-green-400 mt-2 block w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></span>
+                Familiar with AWS SAM, AWS Cloudformation Stack, AWS Lambda Functions, AWS S3, AWS RDS and many other cloud services.
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-green-400 mt-2 block w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></span>
+                Could learn many languages and technologies in very short period of time.
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-green-400 mt-2 block w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></span>
+                Proficient in Linux bash and macOS terminal.
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-green-400 mt-2 block w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></span>
+                Clean coding, ergonomic, good Photoshop and UI design skill, mobile first and responsive designing mind set.
+              </li>
+              <li className="flex items-start gap-3">
+                <span className="text-green-400 mt-2 block w-2 h-2 bg-green-400 rounded-full flex-shrink-0"></span>
+                Able to work as full stack developer with NextJS, React, Angular, RxJS, Ionic, VueJS and Tailwind for frontend, backend using NodeJS, Java Spring Boot, PHP, MySQL, PostgreSQL, MongoDB.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* Skills Section */}
+      <section className="py-20 px-4 bg-slate-800/30">
         <div className="max-w-6xl mx-auto">
           <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent">
             Technical Skills
@@ -151,6 +188,65 @@ const Index = () => {
                 </div>
               );
             })}
+          </div>
+        </div>
+      </section>
+
+      {/* Education Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent flex items-center justify-center gap-3">
+            <GraduationCap className="text-green-400" size={36} />
+            Education
+          </h2>
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-green-500/50 transition-all duration-500">
+            <div className="mb-6">
+              <h3 className="text-2xl font-semibold text-green-400 mb-2">FPT UNIVERSITY</h3>
+              <p className="text-lg text-slate-300 mb-2">Major: Software Engineering - IELTS 6.5</p>
+              <p className="text-slate-400 mb-4">2014 – 2018</p>
+            </div>
+            <div className="space-y-3">
+              <div className="flex items-start gap-3">
+                <Award className="text-green-400 mt-1 flex-shrink-0" size={16} />
+                <span className="text-slate-300">Top 50 Student Achievement Award for Excellent Semester Transcript in Feb 2017</span>
+              </div>
+              <div className="flex items-start gap-3">
+                <Award className="text-green-400 mt-1 flex-shrink-0" size={16} />
+                <span className="text-slate-300">Top 100 Student Achievement Award for Good Semester Transcript in Jun 2018</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Certifications Section */}
+      <section className="py-20 px-4 bg-slate-800/30">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent flex items-center justify-center gap-3">
+            <Award className="text-green-400" size={36} />
+            Certifications
+          </h2>
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-green-500/50 transition-all duration-500 text-center">
+            <div className="inline-flex items-center gap-3 bg-green-600/20 text-green-300 px-6 py-3 rounded-full border border-green-600/30">
+              <Award size={24} />
+              <span className="text-lg font-semibold">Solution Architect Certification 2022</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Honors & Awards Section */}
+      <section className="py-20 px-4">
+        <div className="max-w-4xl mx-auto">
+          <h2 className="text-4xl font-bold text-center mb-16 bg-gradient-to-r from-green-400 to-emerald-400 bg-clip-text text-transparent flex items-center justify-center gap-3">
+            <Award className="text-green-400" size={36} />
+            Honors & Awards
+          </h2>
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-green-500/50 transition-all duration-500 text-center">
+            <div className="inline-flex items-center gap-3 bg-emerald-600/20 text-emerald-300 px-6 py-3 rounded-full border border-emerald-600/30">
+              <Award size={24} />
+              <span className="text-lg font-semibold">Excellent Employee Award 2021</span>
+            </div>
           </div>
         </div>
       </section>
