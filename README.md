@@ -1,73 +1,129 @@
-# Welcome to your Lovable project
 
-## Project info
+# Tran Quoc Tuan - Portfolio Landing Page
 
-**URL**: https://lovable.dev/projects/11421165-7eee-4b8d-b796-2b30b31f496b
+A modern, responsive portfolio landing page showcasing the professional experience and skills of Tran Quoc Tuan, a Full Stack Developer with 7 years of experience and Solution Architect Certification.
 
-## How can I edit this code?
+## Project Overview
 
-There are several ways of editing your application.
+This portfolio website features:
+- **Modern Design**: Clean, professional layout with green theme and smooth animations
+- **Responsive Layout**: Mobile-first design that works on all devices
+- **Professional Sections**: 
+  - Hero section with professional avatar
+  - Objective highlighting key qualifications
+  - Technical skills showcase
+  - Education details with achievements
+  - Featured projects from work experience
+  - Certifications and honors
+  - Direct links to LinkedIn and GitHub profiles
+- **Smooth Animations**: CSS animations and transitions for enhanced user experience
+- **Built with Modern Tech**: React, TypeScript, Tailwind CSS, and Vite
 
-**Use Lovable**
+## Technologies Used
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/11421165-7eee-4b8d-b796-2b30b31f496b) and start prompting.
+- **Frontend**: React 18, TypeScript
+- **Styling**: Tailwind CSS with custom animations
+- **Build Tool**: Vite
+- **UI Components**: shadcn/ui
+- **Icons**: Lucide React
+- **Deployment**: Lovable platform
 
-Changes made via Lovable will be committed automatically to this repo.
+## Getting Started
 
-**Use your preferred IDE**
+### Prerequisites
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+- Node.js & npm installed ([install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating))
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+### Installation & Development
 
-Follow these steps:
+1. **Clone the repository**:
+   ```bash
+   git clone <YOUR_GIT_URL>
+   cd <YOUR_PROJECT_NAME>
+   ```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+3. **Start development server**:
+   ```bash
+   npm run dev
+   ```
+   
+   The application will be available at `http://localhost:8080`
 
-# Step 3: Install the necessary dependencies.
-npm i
+### Build for Production
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
+```bash
+npm run build
 ```
 
-**Edit a file directly in GitHub**
+The built files will be in the `dist/` directory.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+### Preview Production Build
 
-**Use GitHub Codespaces**
+```bash
+npm run preview
+```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+## Project Structure
 
-## What technologies are used for this project?
+```
+src/
+├── components/ui/     # Reusable UI components (shadcn/ui)
+├── pages/
+│   └── Index.tsx      # Main portfolio landing page
+├── lib/
+│   └── utils.ts       # Utility functions
+├── hooks/             # Custom React hooks
+└── main.tsx          # Application entry point
+```
 
-This project is built with:
+## Features Implemented
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### Portfolio Sections
+- **Hero Section**: Professional introduction with avatar and call-to-action buttons
+- **Objective**: Key qualifications and technical expertise summary
+- **Technical Skills**: Comprehensive list of programming languages, frameworks, and tools
+- **Education**: University background with academic achievements
+- **Featured Projects**: Highlight of major professional projects with technologies used
+- **Certifications**: Professional certifications and awards
+- **Contact Links**: Direct links to LinkedIn profile and GitHub repositories
 
-## How can I deploy this project?
+### Technical Features
+- Responsive design with mobile-first approach
+- Smooth scroll animations and hover effects
+- Professional color scheme with green accent theme
+- Clean typography and consistent spacing
+- Optimized images and performance
 
-Simply open [Lovable](https://lovable.dev/projects/11421165-7eee-4b8d-b796-2b30b31f496b) and click on Share -> Publish.
+## Customization
 
-## Can I connect a custom domain to my Lovable project?
+To customize the portfolio:
+1. Update personal information in `src/pages/Index.tsx`
+2. Replace avatar image in `public/lovable-uploads/`
+3. Modify color theme in `tailwind.config.ts`
+4. Add or remove sections as needed
 
-Yes, you can!
+## Deployment
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+### Lovable Platform
+Click the "Publish" button in the Lovable editor to deploy instantly.
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+### Custom Domain
+Connect a custom domain through Project > Settings > Domains in Lovable (paid plan required).
+
+### Other Platforms
+The built application can be deployed to any static hosting service like Vercel, Netlify, or GitHub Pages.
+
+## Contact
+
+- **LinkedIn**: [Tran Quoc Tuan](https://www.linkedin.com/in/tran-quoc-tuan-b338261b3/)
+- **GitHub**: [tuantran1295](https://github.com/tuantran1295)
+- **Email**: Tuantran1245@gmail.com
+
+## License
+
+This project is created for portfolio purposes.
