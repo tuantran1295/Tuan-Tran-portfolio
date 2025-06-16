@@ -90,51 +90,75 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-900 via-purple-900 to-slate-900 text-white overflow-x-hidden">
       {/* Hero Section */}
-      <section className="min-h-screen flex items-center justify-center relative">
-        <div className="absolute inset-0 bg-gradient-to-r from-purple-600/20 via-pink-600/20 to-blue-600/20"></div>
+      <section className="min-h-screen flex items-center justify-center relative bg-gradient-to-br from-emerald-900/40 via-green-900/30 to-teal-900/40">
+        <div className="absolute inset-0 bg-gradient-to-r from-emerald-600/10 via-green-600/10 to-teal-600/10"></div>
+        
+        {/* Glass morphism background */}
+        <div className="absolute inset-0 backdrop-blur-sm bg-gradient-to-br from-emerald-500/5 via-green-500/5 to-teal-500/5"></div>
+        
         <div className={`text-center z-10 px-4 transition-all duration-1000 ${isLoaded ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'}`}>
-          {/* Avatar */}
+          {/* Avatar with glass effect */}
           <div className="mb-8">
-            <img 
-              src="/lovable-uploads/fb03a7b4-63d4-4bca-9657-3ef46cb7836e.png" 
-              alt="Tran Quoc Tuan"
-              className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover border-4 border-gradient-to-r from-purple-400 via-pink-400 to-blue-400 shadow-2xl hover:scale-105 transition-transform duration-300 ring-4 ring-purple-400/30"
-              style={{
-                background: 'linear-gradient(45deg, #a855f7, #ec4899, #3b82f6)',
-                padding: '4px'
-              }}
-            />
+            <div className="relative">
+              <div className="absolute inset-0 bg-gradient-to-r from-emerald-400 via-green-400 to-teal-400 rounded-full p-1 animate-pulse">
+                <div className="bg-slate-900/80 backdrop-blur-md rounded-full p-2">
+                  <img 
+                    src="/lovable-uploads/fb03a7b4-63d4-4bca-9657-3ef46cb7836e.png" 
+                    alt="Tran Quoc Tuan"
+                    className="w-32 h-32 md:w-40 md:h-40 rounded-full object-cover hover:scale-105 transition-transform duration-300"
+                  />
+                </div>
+              </div>
+            </div>
           </div>
           
-          <h1 className="text-5xl md:text-7xl font-bold mb-6 bg-gradient-to-r from-purple-400 via-pink-400 to-blue-400 bg-clip-text text-transparent animate-pulse">
-            TRAN QUOC TUAN
-          </h1>
-          <h2 className="text-2xl md:text-3xl text-transparent bg-gradient-to-r from-cyan-400 to-emerald-400 bg-clip-text mb-8 font-light">
-            Full-Stack Developer
-          </h2>
-          <p className="text-lg text-slate-300 mb-12 max-w-2xl mx-auto leading-relaxed">
-            7+ years experienced NodeJS Developer with Solution Architect Certification.
-            Specialized in AWS, React, and modern web technologies.
-          </p>
-          <div className="flex flex-wrap justify-center gap-6">
-            <a href="https://www.linkedin.com/in/tran-quoc-tuan-b338261b3/" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-500 hover:to-pink-500 px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-purple-500/25">
-              <Linkedin size={20} />
-              Contact Me
-            </a>
-            <a href="https://github.com/tuantran1295" target="_blank" rel="noopener noreferrer" className="flex items-center gap-2 border-2 border-gradient-to-r from-blue-400 to-cyan-400 bg-gradient-to-r from-blue-500/10 to-cyan-500/10 hover:from-blue-500/20 hover:to-cyan-500/20 px-6 py-3 rounded-lg transition-all duration-300 hover:scale-105 backdrop-blur-sm">
-              <Github size={20} />
-              View Projects
-            </a>
+          {/* Glass card for main content */}
+          <div className="backdrop-blur-md bg-white/5 border border-white/10 rounded-3xl p-8 md:p-12 shadow-2xl">
+            <h1 className="text-5xl md:text-7xl font-bold mb-6 text-white drop-shadow-lg">
+              TRAN QUOC TUAN
+            </h1>
+            <h2 className="text-2xl md:text-3xl text-emerald-300 mb-8 font-light drop-shadow-md">
+              Full-Stack Developer
+            </h2>
+            <p className="text-lg text-slate-200 mb-12 max-w-2xl mx-auto leading-relaxed">
+              7+ years experienced NodeJS Developer with Solution Architect Certification.
+              Specialized in AWS, React, and modern web technologies.
+            </p>
+            
+            <div className="flex flex-wrap justify-center gap-6">
+              <a 
+                href="https://www.linkedin.com/in/tran-quoc-tuan-b338261b3/" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-2 bg-emerald-600/80 hover:bg-emerald-500/80 backdrop-blur-md border border-emerald-400/30 px-6 py-3 rounded-xl transition-all duration-300 hover:scale-105 shadow-lg hover:shadow-emerald-500/25 text-white"
+              >
+                <Linkedin size={20} />
+                Contact Me
+              </a>
+              <a 
+                href="https://github.com/tuantran1295" 
+                target="_blank" 
+                rel="noopener noreferrer" 
+                className="flex items-center gap-2 bg-white/10 hover:bg-white/20 backdrop-blur-md border border-white/20 hover:border-white/30 px-6 py-3 rounded-xl transition-all duration-300 hover:scale-105 text-white"
+              >
+                <Github size={20} />
+                View Projects
+              </a>
+            </div>
           </div>
         </div>
         
-        {/* Animated Background Elements */}
+        {/* Enhanced animated background elements with green theme */}
         <div className="absolute inset-0 overflow-hidden pointer-events-none">
-          <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-purple-400 rounded-full animate-pulse shadow-lg shadow-purple-400/50"></div>
-          <div className="absolute top-3/4 right-1/4 w-4 h-4 bg-pink-400 rounded-full animate-pulse animation-delay-1000 shadow-lg shadow-pink-400/50"></div>
-          <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-blue-400 rounded-full animate-pulse animation-delay-2000 shadow-lg shadow-blue-400/50"></div>
-          <div className="absolute top-1/2 right-1/3 w-3 h-3 bg-cyan-400 rounded-full animate-pulse shadow-lg shadow-cyan-400/50"></div>
-          <div className="absolute bottom-1/3 right-1/4 w-2 h-2 bg-emerald-400 rounded-full animate-pulse animation-delay-1000 shadow-lg shadow-emerald-400/50"></div>
+          <div className="absolute top-1/4 left-1/4 w-3 h-3 bg-emerald-400 rounded-full animate-pulse shadow-lg shadow-emerald-400/50"></div>
+          <div className="absolute top-3/4 right-1/4 w-4 h-4 bg-green-400 rounded-full animate-pulse animation-delay-1000 shadow-lg shadow-green-400/50"></div>
+          <div className="absolute bottom-1/4 left-1/3 w-2 h-2 bg-teal-400 rounded-full animate-pulse animation-delay-2000 shadow-lg shadow-teal-400/50"></div>
+          <div className="absolute top-1/2 right-1/3 w-3 h-3 bg-emerald-300 rounded-full animate-pulse shadow-lg shadow-emerald-300/50"></div>
+          <div className="absolute bottom-1/3 right-1/4 w-2 h-2 bg-green-300 rounded-full animate-pulse animation-delay-1000 shadow-lg shadow-green-300/50"></div>
+          
+          {/* Floating glass elements */}
+          <div className="absolute top-1/3 left-1/5 w-16 h-16 bg-white/5 backdrop-blur-sm border border-white/10 rounded-2xl rotate-12 animate-pulse animation-delay-2000"></div>
+          <div className="absolute bottom-1/3 right-1/5 w-12 h-12 bg-emerald-500/10 backdrop-blur-sm border border-emerald-500/20 rounded-xl -rotate-12 animate-pulse"></div>
         </div>
       </section>
 
