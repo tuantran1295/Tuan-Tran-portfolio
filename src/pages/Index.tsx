@@ -1,3 +1,4 @@
+
 import { useEffect, useState } from 'react';
 import { Github, Linkedin, Mail, Phone, MapPin, Calendar, ExternalLink, Code, Database, Cloud, Settings, Award, GraduationCap, Target } from 'lucide-react';
 
@@ -216,24 +217,14 @@ const Index = () => {
               </div>
             </div>
             
-            {/* Certificate Images */}
-            <div className="grid md:grid-cols-2 gap-6">
-              <div className="text-center">
-                <img 
-                  src="/lovable-uploads/228dc3d2-fc28-4d37-af37-c92671d0ee11.png" 
-                  alt="Excellent Student of Semester Certificate - Fall 2016"
-                  className="w-full rounded-lg border border-slate-600 hover:border-green-400 transition-colors duration-300 mb-2"
-                />
-                <p className="text-sm text-slate-400">Excellent Student Certificate - Fall 2016</p>
-              </div>
-              <div className="text-center">
-                <img 
-                  src="/lovable-uploads/0633de57-0c4e-43aa-97d3-ef3024bd0537.png" 
-                  alt="Employee Recognition Certificate 2021"
-                  className="w-full rounded-lg border border-slate-600 hover:border-green-400 transition-colors duration-300 mb-2"
-                />
-                <p className="text-sm text-slate-400">Employee Recognition 2021</p>
-              </div>
+            {/* Certificate Image */}
+            <div className="text-center">
+              <img 
+                src="/lovable-uploads/228dc3d2-fc28-4d37-af37-c92671d0ee11.png" 
+                alt="Excellent Student of Semester Certificate - Fall 2016"
+                className="w-full max-w-md mx-auto rounded-lg border border-slate-600 hover:border-green-400 transition-colors duration-300 mb-2"
+              />
+              <p className="text-sm text-slate-400">Excellent Student Certificate - Fall 2016</p>
             </div>
           </div>
         </div>
@@ -274,10 +265,22 @@ const Index = () => {
             <Award className="text-green-400" size={36} />
             Honors & Awards
           </h2>
-          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-green-500/50 transition-all duration-500 text-center">
-            <div className="inline-flex items-center gap-3 bg-emerald-600/20 text-emerald-300 px-6 py-3 rounded-full border border-emerald-600/30">
-              <Award size={24} />
-              <span className="text-lg font-semibold">Excellent Employee Award 2021</span>
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-green-500/50 transition-all duration-500">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center gap-3 bg-emerald-600/20 text-emerald-300 px-6 py-3 rounded-full border border-emerald-600/30">
+                <Award size={24} />
+                <span className="text-lg font-semibold">Excellent Employee Award 2021</span>
+              </div>
+            </div>
+            
+            {/* Certificate Image */}
+            <div className="text-center">
+              <img 
+                src="/lovable-uploads/0633de57-0c4e-43aa-97d3-ef3024bd0537.png" 
+                alt="Employee Recognition Certificate 2021"
+                className="w-full max-w-md mx-auto rounded-lg border border-slate-600 hover:border-green-400 transition-colors duration-300 mb-2"
+              />
+              <p className="text-sm text-slate-400">Employee Recognition 2021</p>
             </div>
           </div>
         </div>
