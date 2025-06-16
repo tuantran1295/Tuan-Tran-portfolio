@@ -90,7 +90,7 @@ const Index = () => {
           {/* Avatar */}
           <div className="mb-8">
             <img 
-              src="/lovable-uploads/fb03a7b4-63d4-4bca-9657-3ef46cb7836e.png" 
+              src={`${import.meta.env.BASE_URL}/lovable-uploads/fb03a7b4-63d4-4bca-9657-3ef46cb7836e.png`}
               alt="Tran Quoc Tuan"
               className="w-32 h-32 md:w-40 md:h-40 rounded-full mx-auto object-cover border-4 border-green-400 shadow-lg hover:scale-105 transition-transform duration-300"
             />
@@ -220,7 +220,7 @@ const Index = () => {
             {/* Certificate Image */}
             <div className="text-center">
               <img 
-                src="/lovable-uploads/228dc3d2-fc28-4d37-af37-c92671d0ee11.png" 
+                src={`${import.meta.env.BASE_URL}/lovable-uploads/228dc3d2-fc28-4d37-af37-c92671d0ee11.png`}
                 alt="Excellent Student of Semester Certificate - Fall 2016"
                 className="w-full max-w-md mx-auto rounded-lg border border-slate-600 hover:border-green-400 transition-colors duration-300 mb-2"
               />
@@ -248,7 +248,7 @@ const Index = () => {
             {/* Certificate Image */}
             <div className="text-center">
               <img 
-                src="/lovable-uploads/7cc9a134-da9e-4cca-914c-4dbe841f5469.png" 
+                src={`${import.meta.env.BASE_URL}/lovable-uploads/7cc9a134-da9e-4cca-914c-4dbe841f5469.png`}
                 alt="Solution Architect Certificate of Completion - October 2022"
                 className="w-full max-w-2xl mx-auto rounded-lg border border-slate-600 hover:border-green-400 transition-colors duration-300 mb-2"
               />
@@ -276,11 +276,11 @@ const Index = () => {
             {/* Certificate Image */}
             <div className="text-center">
               <img 
-                src="/lovable-uploads/0633de57-0c4e-43aa-97d3-ef3024bd0537.png" 
+                src={`${import.meta.env.BASE_URL}/lovable-uploads/0633de57-0c4e-43aa-97d3-ef3024bd0537.png`}
                 alt="Employee Recognition Certificate 2021"
                 className="w-full max-w-md mx-auto rounded-lg border border-slate-600 hover:border-green-400 transition-colors duration-300 mb-2"
               />
-              <p className="text-sm text-slate-400">Employee Recognition 2021</p>
+              <p className="text-sm text-slate-400">Excellent Employee 2021</p>
             </div>
           </div>
         </div>
