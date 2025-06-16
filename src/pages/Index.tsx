@@ -205,7 +205,7 @@ const Index = () => {
               <p className="text-lg text-slate-300 mb-2">Major: Software Engineering - IELTS 6.5</p>
               <p className="text-slate-400 mb-4">2014 – 2018</p>
             </div>
-            <div className="space-y-3">
+            <div className="space-y-3 mb-8">
               <div className="flex items-start gap-3">
                 <Award className="text-green-400 mt-1 flex-shrink-0" size={16} />
                 <span className="text-slate-300">Top 50 Student Achievement Award for Excellent Semester Transcript in Feb 2017</span>
@@ -213,6 +213,26 @@ const Index = () => {
               <div className="flex items-start gap-3">
                 <Award className="text-green-400 mt-1 flex-shrink-0" size={16} />
                 <span className="text-slate-300">Top 100 Student Achievement Award for Good Semester Transcript in Jun 2018</span>
+              </div>
+            </div>
+            
+            {/* Certificate Images */}
+            <div className="grid md:grid-cols-2 gap-6">
+              <div className="text-center">
+                <img 
+                  src="/lovable-uploads/228dc3d2-fc28-4d37-af37-c92671d0ee11.png" 
+                  alt="Excellent Student of Semester Certificate - Fall 2016"
+                  className="w-full rounded-lg border border-slate-600 hover:border-green-400 transition-colors duration-300 mb-2"
+                />
+                <p className="text-sm text-slate-400">Excellent Student Certificate - Fall 2016</p>
+              </div>
+              <div className="text-center">
+                <img 
+                  src="/lovable-uploads/0633de57-0c4e-43aa-97d3-ef3024bd0537.png" 
+                  alt="Employee Recognition Certificate 2021"
+                  className="w-full rounded-lg border border-slate-600 hover:border-green-400 transition-colors duration-300 mb-2"
+                />
+                <p className="text-sm text-slate-400">Employee Recognition 2021</p>
               </div>
             </div>
           </div>
@@ -226,10 +246,22 @@ const Index = () => {
             <Award className="text-green-400" size={36} />
             Certifications
           </h2>
-          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-green-500/50 transition-all duration-500 text-center">
-            <div className="inline-flex items-center gap-3 bg-green-600/20 text-green-300 px-6 py-3 rounded-full border border-green-600/30">
-              <Award size={24} />
-              <span className="text-lg font-semibold">Solution Architect Certification 2022</span>
+          <div className="bg-slate-800/50 backdrop-blur-sm rounded-xl p-8 border border-slate-700 hover:border-green-500/50 transition-all duration-500">
+            <div className="text-center mb-8">
+              <div className="inline-flex items-center gap-3 bg-green-600/20 text-green-300 px-6 py-3 rounded-full border border-green-600/30 mb-6">
+                <Award size={24} />
+                <span className="text-lg font-semibold">Solution Architect Certification 2022</span>
+              </div>
+            </div>
+            
+            {/* Certificate Image */}
+            <div className="text-center">
+              <img 
+                src="/lovable-uploads/7cc9a134-da9e-4cca-914c-4dbe841f5469.png" 
+                alt="Solution Architect Certificate of Completion - October 2022"
+                className="w-full max-w-2xl mx-auto rounded-lg border border-slate-600 hover:border-green-400 transition-colors duration-300 mb-2"
+              />
+              <p className="text-sm text-slate-400">Solution Architect Certificate - October 2022</p>
             </div>
           </div>
         </div>

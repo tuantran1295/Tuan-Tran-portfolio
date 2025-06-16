@@ -12,9 +12,10 @@ This portfolio website features:
   - Hero section with professional avatar
   - Objective highlighting key qualifications
   - Technical skills showcase
-  - Education details with achievements
+  - Education details with achievements and certificates
   - Featured projects from work experience
-  - Certifications and honors
+  - Certifications with official certificate images
+  - Honors and awards recognition
   - Direct links to LinkedIn and GitHub profiles
 - **Smooth Animations**: CSS animations and transitions for enhanced user experience
 - **Built with Modern Tech**: React, TypeScript, Tailwind CSS, and Vite
@@ -26,7 +27,6 @@ This portfolio website features:
 - **Build Tool**: Vite
 - **UI Components**: shadcn/ui
 - **Icons**: Lucide React
-- **Deployment**: Lovable platform
 
 ## Getting Started
 
@@ -87,9 +87,10 @@ src/
 - **Hero Section**: Professional introduction with avatar and call-to-action buttons
 - **Objective**: Key qualifications and technical expertise summary
 - **Technical Skills**: Comprehensive list of programming languages, frameworks, and tools
-- **Education**: University background with academic achievements
+- **Education**: University background with academic achievements and certificate images
 - **Featured Projects**: Highlight of major professional projects with technologies used
-- **Certifications**: Professional certifications and awards
+- **Certifications**: Professional certifications with official certificate display
+- **Honors & Awards**: Recognition and awards received
 - **Contact Links**: Direct links to LinkedIn profile and GitHub repositories
 
 ### Technical Features
@@ -98,24 +99,18 @@ src/
 - Professional color scheme with green accent theme
 - Clean typography and consistent spacing
 - Optimized images and performance
+- Interactive certificate gallery
 
 ## Customization
 
 To customize the portfolio:
 1. Update personal information in `src/pages/Index.tsx`
-2. Replace avatar image in `public/lovable-uploads/`
+2. Replace avatar and certificate images in `public/lovable-uploads/`
 3. Modify color theme in `tailwind.config.ts`
 4. Add or remove sections as needed
 
 ## Deployment
 
-### Lovable Platform
-Click the "Publish" button in the Lovable editor to deploy instantly.
-
-### Custom Domain
-Connect a custom domain through Project > Settings > Domains in Lovable (paid plan required).
-
-### Other Platforms
 The built application can be deployed to any static hosting service like Vercel, Netlify, or GitHub Pages.
 
 ## Contact
