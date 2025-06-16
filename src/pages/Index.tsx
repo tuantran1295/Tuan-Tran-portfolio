@@ -11,8 +11,8 @@ const Index = () => {
 
   const skills = [
     { category: "Frontend", items: ["React", "Angular", "Vue.js", "Next.js", "Tailwind CSS", "Bootstrap"], icon: Code },
-    { category: "Backend", items: ["Node.js", "Express", "PHP", "Laravel", "Spring Boot"], icon: Settings },
-    { category: "Database", items: ["PostgreSQL", "MySQL", "MongoDB", "Redis", "Prisma"], icon: Database },
+    { category: "Backend", items: ["Node.js", "NestJS", "Java Spring Boot", "PHP", "Laravel", "ASP.NET"], icon: Settings },
+    { category: "Database", items: ["PostgreSQL", "MySQL", "MongoDB", "Supabase", "Redis", "Prisma"], icon: Database },
     { category: "Cloud & Tools", items: ["AWS", "Docker", "CI/CD", "Git", "Lambda", "S3"], icon: Cloud }
   ];
 
